@@ -17,7 +17,8 @@ function Clock(){
     }
 
     var clockBackground = "#" + seconds + minutes + hours;
-    var clockLine = "#" + hours + minutes + seconds;
+    var clockLine = "#" + hours + seconds + minutes;
+    var clockTry = "#"  + seconds + minutes + hours;
 
     document.getElementById('clock').innerHTML = clockBackground;
     document.body.style.backgroundColor = clockBackground;

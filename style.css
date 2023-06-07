@@ -4,13 +4,6 @@
   height: auto;
 }
 
-@media (max-width: 700px) {
-  .navbar-logo {
-    max-width: 150px; 
-  }
-}
-
-
 
 #container{
     margin: 2 white;
@@ -24,6 +17,20 @@
 #clock{
     font-size: 75px;
     color: white;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.flex-item {
+  flex: 1;
+  padding: 10px;
+  border: 5spx solid #ccc;
+  background-color: rgb(211, 211, 211);
 }
 
 html, body {

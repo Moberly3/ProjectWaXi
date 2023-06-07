@@ -28,3 +28,21 @@ function Clock(){
 }
 Clock();
 
+$(document).ready(function(){
+    $('#close').on('click', function(){
+        $('.desc').hide();
+    });
+
+    $('#open').on('click', function(){
+        $('.desc').show();
+    });
+
+});
+
+function show() {
+    let image = document.getElementById("image");
+    image.src =
+"https://media.geeksforgeeks.org/wp-content/uploads/20210915115837/gfg3.png"
+    document.getElementById("btnID")
+        .style.display = "none";
+}

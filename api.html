@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - WiXi</title>
+    <title>WiXi</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 
@@ -22,13 +22,13 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" href="index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="about.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="api.html">Api</a>
+            <a class="nav-link" aria-current="page" href="#">Api</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="login">Login</a>
@@ -37,19 +37,26 @@
       </div>
     </div>
   </nav>
-  <div class="wrapper">
-    <div id="container">
-        <h1>Welcome back</h1>
-    </div>
-    <div id="clockContainer">
-        <p id="clock"></p>
-        <h1>Dont try this at home</h1>
-    </div>
-    
-    <h2> The Cat Café Atmosphere: </h2> <p>  
-        
-      Walking into a cat café is like entering a tranquil oasis, carefully designed to create a serene and comfortable environment for both cats and visitors. Soft music plays in the background as you sink into a cozy chair, sipping on your favorite latte or tea. The scent of freshly brewed coffee mingles with the gentle purring of contented cats, instantly putting you at ease.
-    </p>
+  <div>
+    <h1>GeeksforGeeks</h1>
+    <h3>Click on the button to see image</h3>
+    <!-- img element without src attribute -->
+    <img id="image" src="" />
+</div>
+<button type="button" onclick="show()" id="btnID">
+    Show Image
+</button>
+<script>
+    function show() {
+        /* Get image and change value
+        of src attribute */
+        let image = document.getElementById("image");
+        image.src =
+"https://media.geeksforgeeks.org/wp-content/uploads/20210915115837/gfg3.png"
+        document.getElementById("btnID")
+            .style.display = "none";
+    }
+</script>
 
 </body>
 

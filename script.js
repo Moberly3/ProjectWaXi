@@ -18,11 +18,13 @@ function Clock(){
 
     var clockBackground = "#" + seconds + minutes + hours;
     var clockLine = "#" + hours + seconds + minutes;
-    var clockTry = "#"  + seconds + minutes + hours;
+    var clockTry = "#"  + seconds + minutes + seconds;
 
     document.getElementById('clock').innerHTML = clockBackground;
     document.body.style.backgroundColor = clockBackground;
     document.body.style.color = clockLine;
+    document.body.style.color = clockTry;
     setTimeout(Clock, 1000);
 }
 Clock();
+

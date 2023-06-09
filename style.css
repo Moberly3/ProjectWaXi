@@ -46,3 +46,22 @@ html, body {
   footer {
     margin-top: auto;
   }
+
+  .maincontent{
+    padding-top: 0%;
+    padding-left:0%;
+  }
+  
+  .col {
+    border-color: red ;
+    padding: 1%;
+    border-style: solid;
+    border-width: medium;
+  }
+  .col-lg{
+      height: 200px;
+      overflow: hidden;
+      margin: 10px 0;
+      position: relative;
+      flex-basis: 30%;
+  }

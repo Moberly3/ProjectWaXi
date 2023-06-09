@@ -14,6 +14,10 @@ $(document).ready(function(){
       div.animate({width: '300px', opacity: '0.8'}, "slow");
       div.animate({height: '100px', opacity: '0.4'}, "slow");
       div.animate({width: '100px', opacity: '0.8'}, "slow");
+      div.animate({height: '200px', opacity: '0.2'}, "slow");
+      div.animate({width: '200px', opacity: '0.4'}, "slow");
+      div.animate({height: '100px', opacity: '0.2'}, "slow");
+      div.animate({width: '100px', opacity: '0.4'}, "slow");
     });
   });
 

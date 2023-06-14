@@ -1,15 +1,16 @@
-if (typeof(Storage) !== "undefined") {
-    var storedName = localStorage.getItem("name");
+function saveData() {
+  var inputValue = document.getElementById('myInput').value;
+  localStorage.setItem('data', inputValue);
+  alert('Data saved to local storage!');
+}
+
+function retrieveData() {
+  var savedDataDiv = document.getElementById('savedData');
+  var savedData = localStorage.getItem('data');
   
-    if (storedName) {
-      console.log("Welcome back, " + storedName + "!");
-    } else {
-      var name = prompt("What is your name?");
-  
-      localStorage.setItem("name", name);
-  
-      console.log("Nice to meet you, " + name + "!");
-    }
+  if (savedData) {
+    savedDataDiv.textContent = 'Retrieved Data: ' + savedData;
   } else {
-    console.log("Sorry, your browser doesn't support local storage.");
+    savedDataDiv.textContent = 'No data found in local storage.';
   }
+}
